@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            const emptyArray = [];
+            let i=1;
+            let j=1;
+            let k=0;
+            for(i=1;i<=9;i++){
+                emptyArray[k]=i+"の段";
+                k++;
+                for(j=1;j<=9;j++){
+                    emptyArray[k]="　"+i+"×"+j+"="+(i*j);
+                    k++;
+                }
+            }
+            console.log(emptyArray);
+        </script>
+    </head>
+</html>
