@@ -1,0 +1,17 @@
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        var ast="＊"
+        var sp="　　　　　　　　　　"
+
+        for(j=10;j>=1;j--){
+            dasu(sp,j,ast)  
+            ast = ast+"＊＊"
+        }
+        function dasu(sp,j,ast){
+            document.write(sp.substr(0,j)+ast+"<br>");
+        }
+    </script>
+</body>
