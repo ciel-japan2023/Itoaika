@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <input type="text" id="one"/>
+    +
+    <input type="text" id="two"/>
+    <button id="button">ボタン</button>
+
+    <div id="test"></div>
+
+</body>
+    <script>
+        $("#button").on("click",function(){
+            if(isNaN(?)||isNaN(?)){
+                alert("数値以外が入力されています。");
+            }
+            else{
+                $("#test").append(Number($("#text1").val())+Number($("#text20").val()));
+            }
+        });
+
+    </script>
+</html>

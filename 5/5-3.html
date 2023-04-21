@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <input type="text" id="one"/>
+    +
+    <input type="text" id="two"/>
+    <button id="button">ボタン</button>
+
+    <div id="test"></div>
+
+</body>
+    <script>
+        $("#button").on("click", function(){
+            var value1 = document.getElementById("one").value;
+         var value2 = document.getElementById("two").value;
+         var result = parseInt(value1)  + parseInt(value2) ;
+			$("#test").append(result);
+		});
+
+    </script>
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- ここに画面に表示する内容を書く -->
+	<input type="text" id="text" />
+	<button id="button">ボタン</button>
+    <input type="button" value="クリアボタン" onclick="clearText()"/>
+
+	<div id="test"></div>
+	
+	
+	<script>
+		$("#button").on("click", function(){
+			$("#test").append($("#text").val());
+		});
+        function clearText() {
+	        var textForm = document.getElementById($("#test").text(""));
+            textForm.value = '';
+        }
+	</script>
+</body>
+
+</html>

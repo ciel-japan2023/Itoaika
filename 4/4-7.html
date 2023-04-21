@@ -1,0 +1,18 @@
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        var ast="＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊"
+        var sp="　"
+
+        for(i=0;i<=10;i++){
+            dasu(ast,sp,i)
+            sp=sp+"　"
+
+        }
+        function dasu(ast,sp,i){
+            document.write(sp.substr(0,i)+ast.substr(0,21-i*2)+"<br>");
+        }
+    </script>
+</body>
