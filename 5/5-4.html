@@ -1,28 +1,33 @@
 <html>
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<meta charset="UTF-8">
+    <title>練習問題</title>
 </head>
 
 <body>
-    <input type="text" id="one"/>
-    +
-    <input type="text" id="two"/>
-    <button id="button">ボタン</button>
+<input type="text" id="text1" maxlength="5" />
++
+<input type="text" id="text2" maxlength="5" />
+<input type="button" id="button1" value="ボタン" />
 
-    <div id="test"></div>
+<div id="span1"></div>
 
-</body>
-    <script>
-        $("#button").on("click",function(){
-            if(isNaN(?)||isNaN(?)){
-                alert("数値以外が入力されています。");
-            }
-            else{
-                $("#test").append(Number($("#text1").val())+Number($("#text20").val()));
-            }
-        });
-
+<script>
+  $("#button1").click(function () {
+    const str1 = $("#text1").val(); // テキストボックスのvalue値を取得
+    const str2 = $("#text2").val();
+    if(isNaN(Number(str1))||isNaN(Number(str2))){
+        alert("数値以外が入力されています。");
+    }
+    else{
+    var nam=Number(str1)+Number(str2)
+    $("#span1").text(nam); // spanタグに値を設定
+    }
+  });
     </script>
+</body>
+
 </html>
