@@ -215,10 +215,10 @@
 
 		// 戻るボタン押下時の処理
 		$("#button_back").on("click", function(){
-			let curVal=$("#display").val();
+			let curVal = $("#display").val();
 			let len=curVal.length;
 			if(len > 1){
-				curval = curVal.slice(0,len-1);
+				curVal = curVal.slice(0,len-1);
 				$("#display").val(curVal);
 			}
 			else{
