@@ -1,0 +1,1 @@
+select * from em_t_stock_item

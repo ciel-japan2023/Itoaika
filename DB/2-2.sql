@@ -1,0 +1,1 @@
+select * from em_m_code;
